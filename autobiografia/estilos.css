@@ -7,7 +7,7 @@
 .titulo{
     font-family:cursive;
     font-synthesis: weight;
-    color:#87CEFA;
+    color:rgb(11,202,164);
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 h1{
@@ -16,40 +16,89 @@ h1{
 .imagen{
     border-radius: 50%;
 }
+#contenidos{
+    display: table-row;
+    background-image: url(./imagenes/logos/fondo2.png);
+    background-repeat:round;
+    background-repeat: repeat;
+}
+#izquierdo, #contenido, #derecha{
+    display: table-cell;
+    padding-bottom: 50%;
+    margin-bottom: -50%;
+}
+#contenedor{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0px;
+    display: table;
+    overflow: hidden;
+}
+#izquierdo {
+    float: left;
+    width: 20%;
+   padding-left: 20%;
+    opacity: 0.5;
+    line-height: normal;
+}
+#contenido {
+    float: left;
+    width: 50%;
+    background-color: rgba(0,0,0,0.30);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 20%;   
+}
+#cabecera{
+    width:100%;
+    height: 100%;
+    background:black;
+}
 
+#derecha {
+    float: left;
+    width: 20%;
+    line-height: normal;
+}
+#pie {
+    clear: both;
+    background-color: rgb(11,202,164);
+    float: left;
+    width: 100%;
+}
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 header {
-  background: rgba(0,0,0,0.9);
-  width: 100%;
-  z-index: 100;
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    z-index: 100; 
 }
-
 nav {
-  float: center; 
+    text-align: center;
 }
- 
 nav ul {
-  list-style: none;
-  overflow: hidden;
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+    
+    display: inline-block; /*centra la barra*/
+    margin: 0;
+    padding: 0;
 }
- 
 nav ul li {
-  float: left;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
- 
 nav ul li a {
-  display: block; 
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
 }
- 
 nav ul li:hover {
-  background: rgb(4,65,179);
+    background: rgb(4,65,179);
 }
