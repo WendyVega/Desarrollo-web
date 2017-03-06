@@ -13,34 +13,21 @@
 h1{
     font-kerning: auto;
 }
+h1,h2,h3,h4{
+    text-align: center;
+}
 .imagen{
     border-radius: 50%;
-}
-#contenidos{
-    display: table-row;
-    background-image: url(./imagenes/logos/fondo2.png);
-    background-repeat:round;
-    background-repeat: repeat;
-}
-#izquierdo, #contenido, #derecha{
-    display: table-cell;
-    padding-bottom: 50%;
-    margin-bottom: -50%;
 }
 #contenedor{
     width: 100%;
     height: 100%;
     margin-bottom: 0px;
-    display: table;
     overflow: hidden;
+    background-image: url(./imagenes/logos/fondo2.png);
+
 }
-#izquierdo {
-    float: left;
-    width: 20%;
-   padding-left: 20%;
-    opacity: 0.5;
-    line-height: normal;
-}
+
 #contenido {
     float: left;
     width: 50%;
@@ -55,12 +42,6 @@ h1{
     height: 100%;
     background:black;
 }
-
-#derecha {
-    float: left;
-    width: 20%;
-    line-height: normal;
-}
 #pie {
     clear: both;
     background-color: rgb(11,202,164);
@@ -71,7 +52,6 @@ h1{
     padding: 0;
     margin: 0;
 }
-
 header {
     background: rgba(0,0,0,0.9);
     width: 100%;
@@ -102,3 +82,23 @@ nav ul li a {
 nav ul li:hover {
     background: rgb(4,65,179);
 }
+#copyright{
+    font-size: 80%;
+    font-family: cursive;
+    text-align: left;
+}
+.pieDePagina{
+    font-family: cursive;
+    font-size: 90%;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+#botonArriba{
+    position: fixed;
+    bottom: 1%;
+    right: 15%;
+}
+h2{ font-weight: bold;}
+h3{ text-decoration:underline;}
+h4{ font-style: italic;}
