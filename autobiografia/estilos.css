@@ -2,7 +2,8 @@
     font-family: sans-serif;
     text-align: justify;
     font-size: 120%;
-    
+    text-indent: 2em;
+    line-height: 1.5em;
 }
 .titulo{
     font-family:cursive;
@@ -71,13 +72,14 @@ nav ul {
 nav ul li {
     float: left;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 }
 nav ul li a {
     display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
-    padding: 20px;
+    padding: 1.25em;
     color: #fff;
     text-decoration: none;
+    letter-spacing: 0.0625em;
 }
 nav ul li:hover {
     background: rgb(4,65,179);
