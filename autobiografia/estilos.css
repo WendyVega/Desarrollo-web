@@ -10,12 +10,14 @@
     font-synthesis: weight;
     color:rgb(11,202,164);
     text-shadow: 0.1em 0.1em 0.2em black;
+    font-family: serif;
 }
 h1{
     font-kerning: auto;
 }
 h1,h2,h3,h4{
     text-align: center;
+    font-family: serif;
 }
 .imagen{
     border-radius: 50%;
@@ -26,22 +28,49 @@ h1,h2,h3,h4{
     margin-bottom: 0px;
     overflow: hidden;
     background-image: url(./imagenes/logos/fondo2.png);
-
 }
-
 #contenido {
     float: left;
     width: 50%;
     background-color: rgba(0,0,0,0.30);
-    padding-top: 5%;
+    padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
     margin-left: 20%;   
+}
+#menu{
+    top: 40%;
+    left: 4%;
+    width: 10%;
+    float: left;
+    position: fixed;
+    border: ridge;
+    border-color: black;
+    border-width: 0.3em;
+    background-color: rgba(0,0,0,0.7);
+    color: aliceblue;
+    line-height: 1.4em;
+    font-family: sans-serif;
+    padding-left: 1em;
+    box-shadow: 0.4em 0.4em 0.4em black;
+}
+#menu ul {
+    padding-left: 1em;
+}
+#menu ul li a{
+    text-decoration: none;
+}
+#menu ul li a:link{
+    color: aliceblue;
+}
+#menu ul li a:visited{
+    color: aliceblue;
 }
 #cabecera{
     width:100%;
     height: 100%;
     background:black;
+    padding-top: 4%;
 }
 #pie {
     clear: both;
@@ -57,6 +86,8 @@ header {
     background: rgba(0,0,0,0.9);
     width: 100%;
     z-index: 100; 
+    position: fixed;
+    top: 0;
 }
 nav {
     text-align: center;
@@ -65,7 +96,7 @@ nav ul {
     list-style: none;
     overflow: hidden; /* Limpiamos errores de float */
     
-    display: inline-block; /*centra la barra*/
+    display: inline-block; 
     margin: 0;
     padding: 0;
 }
@@ -75,7 +106,7 @@ nav ul li {
     font-size: 1em;
 }
 nav ul li a {
-    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    display: block;
     padding: 1.25em;
     color: #fff;
     text-decoration: none;
