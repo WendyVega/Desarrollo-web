@@ -4,16 +4,18 @@
     <link rel="stylesheet"
           type="text/css"
           href="./estilos.css">
-    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba"/></a>
+    <link href="./imagenes/logos/luna.jpg" rel="shortcut icon" type="image/png">
+    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba" class="agrandaImagen"/></a>
 	</head>
 <body>
     <div id="contenedor">
         <div id="cabecera">
  
-            <a href="./Principal.html" target="_parent"><center><img src="./imagenes/logos/nombre.png"></center></a>
+            <a href="./Principal.html" target="_parent"><center><img src="./imagenes/logos/nombreLuna.png"></center></a>
 <header >
 	<nav>
 		<ul>
+            <li><a href="./Principal.html">¿Qui&#233;n soy?</a></li>
 			<li><a href="./infancia.html">Infancia</a></li>
 			<li><a href="./adolescencia.html">Adolescencia</a></li>
 			<li><a href="./actualidad.html">Actualidad</a></li>
@@ -26,7 +28,7 @@
 </header>
     </div>
     <div id="menu">
-        <h3>Actualidad</h3>
+        <h3 class="tituloMenu">Actualidad</h3>
         <ul class="contenido">
             <li><a href="./actualidad.html#universidad" target="_parent">Universidad</a></li>
             <li><a href="./actualidad.html#futuro" target="_parent">Futuro cercano</a></li>
@@ -42,8 +44,10 @@
         eramos aproximadamente 8 dentro de la “bolita” que siempre andaba junta.
         </p>
         <br>
-        <p><a href="./imagenes/actualidad/tec1.JPG" target="_blank"><img src="./imagenes/actualidad/tec1_opt.jpg" alt="Wendy en escaleras de macro" align="left"></a>
-            Al inicio de la carrera &#233;ramos tantas personas que los estudiantes que
+        <div class="imagenConPie iluminarImagen">
+        <div class="pieFoto" title="En escaleras de macro">
+            <a href="./imagenes/actualidad/pagina/escalerasWendy.jpg" target="_blank"><img src="./imagenes/actualidad/pagina/escalerasWendy_opt.jpg" alt="Wendy en escaleras de macro"></a></div></div>
+            <p>Al inicio de la carrera &#233;ramos tantas personas que los estudiantes que
             llegaban tarde se quedaban sin lugar y se sentaban en el piso, pero para 
             semestre a semestre se han ido saliendo poco a poco, actualmente somos 
             aproximadamente 17 en mi aula, siendo que al inicio &#233;ramos poco m&#225;s
@@ -82,7 +86,10 @@
             2 cr&#233;ditos.
         </p>
         <br>
-        <p><a href="./imagenes/actualidad/seth1.jpg" target="_blank"><img src="./imagenes/actualidad/seth1_opt.jpg" align="left" alt="Seth y Wendy"></a>En ese mismo semestre conoc&#237; a uno de mis mejores amigos actuales, Seth.
+        <div class="imagenConPie iluminarImagen">
+        <div class="pieFoto" title="Seth con Wendy">
+            <a href="./imagenes/actualidad/pagina/sethWendy.jpg" target="_blank"><img src="./imagenes/actualidad/pagina/sethWendy_opt.jpg" alt="Seth y Wendy"></a></div></div>
+            <p>En ese mismo semestre conoc&#237; a uno de mis mejores amigos actuales, Seth.
             Estudi&#243; la misma carrera pero ya egres&#243;. No vive en Los Mochis, pero 
             cada vez que viene nos vemos todo lo que se nos sea posible, y nos comunicamos
             diario.
@@ -101,9 +108,24 @@
             objeto que estaba siendo transportado, y de un servomotor que separaba el objeto
             dependiendo el tama&#241;o que tuviera.
         </p>
-        <center><a href="./imagenes/actualidad/banda.JPG" target="_blank"><img src="./imagenes/actualidad/banda_opt.jpg" alt="Presentaci&#243;n de la banda"></a><a href="./imagenes/actualidad/banda2.JPG" target="_blank"><img src="./imagenes/actualidad/banda2_opt.jpg" alt="Banda transportadora"></a><br>
-            <a href="./imagenes/actualidad/gato2.jpg" target="_blank"><img src="./imagenes/actualidad/gato2_opt.jpg" alt="El equipo"></a><a href="./imagenes/actualidad/gato.jpg" target="_blank"><img src="./imagenes/actualidad/gato_opt.jpg" alt="Juego del gato con arduino"></a></center>
-        <br>
+        <div style="padding-left:1.5em;">
+            <div style="width:15.625em; float:left;">
+            <div class="pieFoto" title="Equipo de la banda transportadora">
+                <a href="./imagenes/actualidad/pagina/bandaEquipo.JPG" target="_blank"><br><img src="./imagenes/actualidad/pagina/bandaEquipo_opt.jpg" alt="Presentaci&#243;n de la banda"></a></div></div>
+            
+            <div style="width:15.625em; float:left;">
+            <div class="pieFoto" title="Banda transportadora con arduino">
+                <a href="./imagenes/actualidad/pagina/banda.JPG" target="_blank"><br><img src="./imagenes/actualidad/pagina/banda_opt.jpg" alt="Banda transportadora"></a></div></div></div><br>
+        
+            <div style="padding-left:1.5em;">
+            <div style="width:15.625em; float:left;">
+            <div class="pieFoto" title="Equipo del juego del gato">
+                <a href="./imagenes/actualidad/pagina/gatoEquipo.jpg" target="_blank"><br><img src="./imagenes/actualidad/pagina/gatoEquipo_opt.jpg" alt="El equipo"></a></div></div>
+            
+            <div style="width:15.625em; float:left;">
+            <div class="pieFoto" title="Juego del gato con arduino">
+                <a href="./imagenes/actualidad/pagina/gato.jpg" target="_blank"><br><img src="./imagenes/actualidad/pagina/gato_opt.jpg" alt="Juego del gato con arduino"></a></div></div></div>
+        
         <p>El semestre que estoy cursando se me prometedor gracias a unas cuantas materias.
         </p>
         <br>
@@ -129,12 +151,10 @@
 
     <div id="pie">
         <p class="pieDePagina">
-            Wendy Vega<br>
-            Contacto:<br>
-            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram"></a><br>
-            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a>
-            <p id="copyright">&#169;2017. Wendy Vega&#153;</p>
+            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook" class="agrandaImagen"></a>
+            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram" class="agrandaImagen"></a><br>
+            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a></p>
+        <p id="copyright">&#169;2017. Wendy Vega</p>
     </div>
     </div>
     </body>
