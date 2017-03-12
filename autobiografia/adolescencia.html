@@ -5,17 +5,19 @@
     <link rel="stylesheet"
           type="text/css"
           href="./estilos.css">
+    <link href="./imagenes/logos/luna.jpg" rel="shortcut icon" type="image/png">
     </head>
-    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba"/></a>
+    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba" class="agrandaImagen"/></a>
 <body>
     <div id="contenedor">
         <div id="cabecera">
  
-            <a href="./Principal.html" target="_parent"><center><img src="./imagenes/logos/nombre.png"></center></a>
+            <a href="./Principal.html" target="_parent"><center><img src="./imagenes/logos/nombreLuna.png"></center></a>
             
 <header >
 	<nav>
 		<ul>
+            		<li><a href="./Principal.html">¿Qui&#233;n soy?</a></li>
 			<li><a href="./infancia.html">Infancia</a></li>
 			<li><a href="./adolescencia.html">Adolescencia</a></li>
 			<li><a href="./actualidad.html">Actualidad</a></li>
@@ -29,7 +31,7 @@
 </header>
     </div>
     <div id="menu">
-        <h3>Adolescencia</h3>
+        <h3 class="tituloMenu">Adolescencia</h3>
         <ul class="contenido">
             <li><a href="./adolescencia.html#secundaria" target="_parent">Secundaria</a></li>
             <li><a href="./adolescencia.html#preparatoria" target="_parent">Preparatoria</a></li>
@@ -38,8 +40,7 @@
     <div id="contenido" class="normal">
     <h1 class="titulo">Adolescencia</h1><br>
     <h2>Secundaria</h2><br>
-    <a href="./imagenes/adolescencia/secu5.jpg" target="_blank">
-            <center><img src="./imagenes/adolescencia/secu5.jpg" alt="Amigos de secundaria"></center></a>
+    <div class="imagenConPie agrandaImagen"><div class="pieFoto" title="2011. Wendy, Ana y Victor"><a href="./imagenes/adolescencia/pagina/WendyAnaVictor.jpg" target="_blank"><img src="./imagenes/adolescencia/pagina/WendyAnaVictor.jpg" alt="Amigos de secundaria"></a></div></div>
     <div><p>Entr&#233; a la secundaria a los 12 a&#241;os de edad. Eleg&#237; 
         entrar a la ETI 2, creo que por lo mismo que eleg&#237; entrar a la 
         Marcial Ord&#243;&#241;ez. Hab&#237;a diferentes talleres, los que 
@@ -62,23 +63,30 @@
             nos llevamos muy bien. Ah&#237; conoc&#237; al que en unos a&#241;os
             ser&#237;a mi novio, &#233;l no iba a concursar, sino de “observador”;
             tambi&#233;n conoc&#237; a un muchacho con el que poco despu&#233;s
-            surgi&#243; atracci&#243;n de ambas partes.</p>
-        <center><a href="./imagenes/adolescencia/topo1.jpg" target="_blank">
-            <img src="./imagenes/adolescencia/topo1_opt.jpg" alt="Concurso Topolobampo"></a>
-        <a href="./imagenes/adolescencia/topo2.jpg" target="_blank">
-            <img src="./imagenes/adolescencia/topo2_opt.jpg" alt="Concursando en Topolobampo"></a>
-        </center>
+            surgi&#243; atracci&#243;n de ambas partes.</p><br>
+        <div style="padding-left:1.5em;">
+        <div style="width:16.250em; float:left;">
+            <div class="pieFoto" title="2010 Topolobampo. Compa&#241;eras de equipo" style="float:left;">
+                <a href="./imagenes/adolescencia/pagina/topoCompaneras.jpg" target="_blank">
+                <img src="./imagenes/adolescencia/pagina/topoCompaneras_opt.jpg" alt="Concurso Topolobampo"></a></div></div>
+        <div style="width:16.250em;float:left;">
+        <div class="pieFoto" title="2010. Concursando">
+            <a href="./imagenes/adolescencia/pagina/concursandoTopo.jpg" target="_blank">
+                <img src="./imagenes/adolescencia/pagina/concursandoTopo_opt.jpg" alt="Concursando en Topolobampo"></a></div></div></div>
+
         <br>
-        <p>Debo mencionar que actualmente apoyo a la comunidad LGBT, creo que
+        <div><br><br><br><br><br><br><br><br>Debo mencionar que actualmente apoyo a la comunidad LGBT, creo que
             la raz&#243;n es porque el muchacho que acabo mencionar, me confes&#243;
             que era bisexual. No se c&#243;mo se dio cuenta tan chico, 
             ten&#237;amos aproximadamente 13-14 a&#241;os de edad. Eso me hizo
             pensar en muchas cosas. 
-        </p>
+        </div>
         <br>
-        <p><a href="./imagenes/adolescencia/ana.png" target="_blank">
-            <img src="./imagenes/adolescencia/ana_opt.png" alt="Ana carga a Wendy" align="left"></a>
-            Desde el inicio de la secundaria, comenc&#233; a hablar con Ana, 
+        <div class="imagenConPie agrandaImagen">
+        <div class="pieFoto" title="Ana cargando a Wendy">
+        <a href="./imagenes/adolescencia/pagina/anaCargandoWendy.png" target="_blank">
+            <img src="./imagenes/adolescencia/pagina/anaCargandoWendy_opt.png" alt="Ana carga a Wendy"></a></div></div>
+            <p>Desde el inicio de la secundaria, comenc&#233; a hablar con Ana, 
             r&#225;pidamente nos hicimos amigas y hasta la fecha es mi mejor amiga.
             Despu&#233;s se nos uni&#243; un ni&#241;o llamado V&#237;ctor, siempre
             and&#225;bamos los tres juntos hablando y haciendo tonter&#237;as. En
@@ -111,9 +119,11 @@
             al primero cami&#243;n que vi&#233;ramos. 
         </p>
         <br>
-        <p><a href="./imagenes/adolescencia/xv.jpg" target="_blank">
-            <img src="./imagenes/adolescencia/xv_opt.jpg" alt="XV de Ana" align="right"></a>
-            Fui dama en varios xv a&#241;os pero yo no quise fiesta. Se me hac&#237;a
+        <div class="imagenConPieDerecha">
+        <div class="pieFoto" title="XV de Ana">
+        <a href="./imagenes/adolescencia/pagina/xvAna.jpg" target="_blank">
+            <img src="./imagenes/adolescencia/pagina/xvAna_opt.jpg" alt="XV de Ana"></a></div></div>
+            <p>Fui dama en varios xv a&#241;os pero yo no quise fiesta. Se me hac&#237;a
             tonto gastar tanto para una noche y no me hac&#237;a ilusi&#243;n. En lugar
             de eso, ped&#237; que me compraran una laptop. Desde un tiempo antes mi hermano
             me hab&#237;a ense&#241;ado a jugar World Of Warcraft, as&#237; que teniendo
@@ -126,12 +136,14 @@
             secundaria. Pusieron barras de fierro, alambre de p&#250;as y creo que tambi&#233;n
             taparon m&#225;s por donde nos brinc&#225;bamos. Aparte de eso, pusieron 
             c&#225;maras de seguridad por toda la secundaria y el se&#241;or del estacionamiento
-            casi siempre manten&#237;a la puerta cerrada, no s&#233; si a&#250;n sea as&#237;.
-            <a href="./imagenes/adolescencia/secu.jpg" target="_blank"><center><img src="./imagenes/adolescencia/secu_opt.jpg" alt="Posada de secundaria"></center></a>
-        </p><a name="preparatoria"></a>
-        <a href="./galeria.html#fotosSecundaria"><center>Ver m&#225;s fotos de mi secundaria.</center></a>
-    </div>
-    <p></p>    
+            casi siempre manten&#237;a la puerta cerrada, no s&#233; si a&#250;n sea as&#237;.</p>
+            <div style="width:16.250em; margin:0 auto;" class="iluminarImagen">
+            <div class="pieFoto" title="Posada en ETI2">
+                <a href="./imagenes/adolescencia/pagina/secuPosada.jpg" target="_blank"><center><img src="./imagenes/adolescencia/pagina/secuPosada_opt.jpg" alt="Posada de secundaria"></center></a></div></div>
+        
+        <a name="preparatoria"></a>
+        <a href="./galeria.html#fotosSecundaria"><center><br>Ver m&#225;s fotos de mi secundaria.</center></a>
+    </div>   
     <br>
     
     <h2>Preparatoria</h2><br>
@@ -149,9 +161,11 @@
             (actualmente estudian conmigo).
         </p>
         <br>
-        <p><a href="./imagenes/adolescencia/gordo.png" target="_blank">
-            <img src="./imagenes/adolescencia/gordo_opt.png" alt="Cuyo Benito" align="left"></a>
-            Durante los primero 9 o 10 meses de preparatoria, Rodrigo fue mi fiel pretendiente.
+        <div class="iluminarImagen imagenConPie">
+        <div class="pieFoto" title="Cuyo. Benito 'el gordo'">
+        <a href="./imagenes/adolescencia/pagina/gordo.png" target="_blank">
+            <img src="./imagenes/adolescencia/pagina/gordo_opt.png" alt="Cuyo Benito"></a></div></div>
+            <p>Durante los primero 9 o 10 meses de preparatoria, Rodrigo fue mi fiel pretendiente.
             Siempre fue muy detallista y atento, no desaprovechaba ocasi&#243;n para darme alg&#250;n
             detalle como flores, peluches o cualquier otra cosa que se le ocurriera. La primer
             semana me obsequi&#243; uno de los mejores regalos que me han hecho: un cuyo, al que
@@ -187,9 +201,11 @@
             d&#237;as despu&#233;s estaba viajando a Toluca.(<a href="galeria.html#fotosOmi">Ver fotos</a>)
         </p>
         <br>
-        <p><a href="./imagenes/adolescencia/obra.jpg" target="_blank">
-            <img src="./imagenes/adolescencia/obra_opt.jpg" alt="Obra de teatro" align="right"></a>
-            En el transcurso de la preparatoria, me ense&#241;aron un poco de algunos lenguajes 
+            <div class="agrandaImagen imagenConPieDerecha iluminarImagen">
+            <div class="pieFoto" title="Actuando">
+            <a href="./imagenes/adolescencia/pagina/obra.jpg" target="_blank">
+                <img src="./imagenes/adolescencia/pagina/obra_opt.jpg" alt="Obra de teatro"></a></div></div>
+            <p>En el transcurso de la preparatoria, me ense&#241;aron un poco de algunos lenguajes 
             de programaci&#243;n como c++, c#, sql, html y tambi&#233;n llev&#233; un poco de
             redes de computadoras. Tambi&#233;n estuve en el club de teatro, estuve yendo a
             clases todos los s&#225;bados hasta que cambiaron de maestro y no me gust&#243;, 
@@ -225,8 +241,10 @@
             la pasamos muy bien, divirti&#233;ndonos pero trabajando. Cuando finalizamos nuestra
             pr&#225;ctica, nos regalaron un pastel de chocolate a cada uno.
         </p>
-        <a href="./imagenes/adolescencia/practica.PNG" target="_blank">
-            <center><img src="./imagenes/adolescencia/practica_opt.PNG" alt="En Soriana"></center></a>
+        <div style="width:6.625em; margin:0 auto;" class="iluminarImagen">
+        <div class="pieFoto" title="Pr&#225;ctica profesional en Soriana">
+        <a href="./imagenes/adolescencia/pagina/practica.PNG" target="_blank">
+            <img src="./imagenes/adolescencia/pagina/practica_opt.PNG" alt="En Soriana"></a></div></div>
         <br>
         <p>La entrega de papeles fue en el fligos, la sesi&#243;n de fotos donde todos 
             est&#225;bamos vestidos de color blanco fue en el maviri, las fotos con toga y
@@ -245,20 +263,21 @@
         <p>A pesar de todo, los a&#241;os de preparatoria han sido de los mejores que he tenido.
             Pas&#233; muy buenos momentos y conoc&#237; a mis mejores amigos.
         </p>
-        <a href="./imagenes/adolescencia/amigos2.png" target="_blank">
-            <center><img src="./imagenes/adolescencia/amigos2_opt.png" alt="Posada preparatoria"></center></a>
-        <a href="./galeria.html#fotosAdolescencia"><center>Ver m&#225;s fotos de mi adolescencia.</center></a>
+        <div style="width:21.875em; margin:0 auto;" class="iluminarImagen">
+        <div class="pieFoto" title="Amigos de preparatoria con toga">
+        <a href="./imagenes/adolescencia/pagina/amigosToga.png" target="_blank">
+            <img src="./imagenes/adolescencia/pagina/amigosToga_opt.png" alt="Amigos con toga"></a></div></div>
+            
+        <a href="./galeria.html#fotosAdolescencia"><center><br>Ver m&#225;s fotos de mi adolescencia.</center></a>
     </div>
      </div>
 
     <div id="pie">
         <p class="pieDePagina">
-            Wendy Vega<br>
-            Contacto:<br>
-            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram"></a><br>
-            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a>
-            <p id="copyright">&#169;2017. Wendy Vega&#153;</p>
+            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook" class="agrandaImagen"></a>
+            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram" class="agrandaImagen"></a><br>
+            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a></p>
+        <p id="copyright">&#169;2017. Wendy Vega</p>
     </div>
     </div>    
     </body>
