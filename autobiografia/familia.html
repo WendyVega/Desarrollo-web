@@ -5,17 +5,19 @@
     <link rel="stylesheet"
           type="text/css"
           href="./estilos.css">
+    <link href="./imagenes/logos/luna.jpg" rel="shortcut icon" type="image/png">
 	</head>
-    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba"/></a>
+    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba" class="agrandaImagen"/></a>
 <body>
     <div id="contenedor">
         <div id="cabecera">
  
-            <a href="./Principal.html" target="_parent"><center><img src="./imagenes/logos/nombre.png"></center></a>
+            <a href="./Principal.html" target="_parent"><center><img src="./imagenes/logos/nombreLuna.png"></center></a>
             
 <header >
 	<nav>
 		<ul>
+            <li><a href="./Principal.html">&#191;Qui&#233;n soy&#63;</a></li>
 			<li><a href="./infancia.html">Infancia</a></li>
 			<li><a href="./adolescencia.html">Adolescencia</a></li>
 			<li><a href="./actualidad.html">Actualidad</a></li>
@@ -29,12 +31,12 @@
 </header>
     </div>
     <div id="menu">
-        <h3>Padres</h3>
+        <h3 class="tituloMenu">Padres</h3>
         <ul class="contenido">
             <li><a href="./familia.html#madre" target="_parent">Mam&#225;</a></li>
             <li><a href="./familia.html#padre" target="_parent">Pap&#225;</a></li>
             </ul>
-        <h3>Hermanos</h3>
+        <h3 class="tituloMenu">Hermanos</h3>
         <ul class="contenido">
             <li><a href="./familia.html#hermano" target="_parent">Hermano</a></li>
             <li><a href="./familia.html#hermana" targer="_parent">Hermana</a></li>
@@ -42,9 +44,15 @@
         </div>
     <div id="contenido" class="normal">
     <h1 class="titulo">Familia</h1><br>
-        <div align=center><a href="./imagenes/infancia/familia/familia3.jpg" target="_blank"><img src="./imagenes/infancia/familia/familia3_opt.jpg" alt="Familia completa" border=0><br></a></div>
-    <a name="madre"></a><h2>Mis padres</h2><br>
+            <div style="width:12.5em; margin:0 auto; padding-left:1.8em;">
+                <div class="pieFoto" title="Familia en mi bautizo">
+                    <a href="./imagenes/infancia/familia/familia3.jpg" target="_blank"><img src="./imagenes/infancia/familia/familia3_opt.jpg" alt="Familia completa"></a></div></div>
+    <br>
+        <a name="madre"></a><h2>Mis padres</h2><br>
     <h3>Mam&#225;</h3>
+    <div class="imagenConPie agrandaImagen">
+        <div class="pieFoto" title="Dolores Hayde&#233;">
+        <a href="./imagenes/infancia/familia/madre.jpg" target="_blank"><img src="./imagenes/infancia/familia/madre_opt.jpg" alt="Madre"></a></div></div>
     <div><p>Mi madre es Dolores Hayde&#233; Ruelas Arellanes naci&#243; el 28 de enero
         de 1966 y es originaria de un lugar de Sinaloa llamado Los Melones. Tuvo 11 hermanos,
         y estudi&#243; secundaria t&#233;cnica con especialidad en secretaria
@@ -63,13 +71,16 @@
         </p>
         <br>
         <p>Despu&#233;s de un tiempo de novios, se cas&#243; teniendo 20 a&#241;os de edad. Tuvo a su
-            primer hija a los 22, el segundo a los 24 y a m&#237; a los 29 a&#241;os. Despu&#233;s de
+            <a name="padre"></a>primer hija a los 22, el segundo a los 24 y a m&#237; a los 29 a&#241;os. Despu&#233;s de
             su primer hija dej&#243; de trabajar, ya que los tres est&#225;bamos grandes
             comenz&#243; a trabajar de nuevo y actualmente se dedica a las ventas.
         </p>
     </div>
     <br>
     <h3>Pap&#225;</h3>
+    <div class="imagenConPie agrandaImagen">
+        <div class="pieFoto" title="Ra&#250;l Vega">
+        <a href="./imagenes/infancia/familia/padre.jpg" target="_blank"><img src="./imagenes/infancia/familia/padre_opt.jpg" alt="Padre"></a></div></div>
     <div><p>Mi padre es Ra&#250;l Vega Trejo naci&#243; el 14 de noviembre de 1961 y es originario de
         Ecuandureo, Michoac&#225;. Tiene 5 hermanos, y estudi&#243; la carrera de Ing.
         Agr&#243;nomo con especialidad en edafolog&#237;a en Juan Jos&#233; R&#237;os.
@@ -93,12 +104,18 @@
         <p>Actualmente se dedica a la fotograf&#237;a y a la venta de carros.
         </p>
     </div>
-        <div align="center"><a href="./imagenes/infancia/familia/papas.jpg" target="_blank"><img src="./imagenes/infancia/familia/papas_opt.jpg" alt="Boda de pap&#225;s"></a></div>
+        <div style="width:8.813em; margin:0 auto; " class="iluminarImagen">
+        <div class="pieFoto" title="Boda de mis padres">
+        <a href="./imagenes/infancia/familia/papas.jpg" target="_blank"><img src="./imagenes/infancia/familia/papas_opt.jpg" alt="Boda de pap&#225;s"></a></div></div>
     <a name="hermano">
-    <br>    
+    <br><br>
     <h2>Mis hermanos</h2></a>
     <br>
     <h3>Hermano</h3>
+    <div class="imagenConPie agrandaImagen">
+        <div class="pieFoto" title="Hermanos y Wendy">
+            <a href="./imagenes/infancia/familia/hermanos1.jpg" target="_blank"><img src="./imagenes/infancia/familia/hermanos1_opt.jpg" alt="Los tres hermanos"></a></div></div>
+        
     <div><p>Mi hermano se llama Ra&#250;l Alberto Vega Ruelas, naci&#243; el 9 de octubre de 1991 en
         Los Mochis, Sinaloa. Fue 4 a&#241;os en total al k&#237;nder, los primeros dos fue para ir
         con mi hermana y los otros 2 fue porque le tocaba ir. Desde chico comenz&#243; a practicar
@@ -123,18 +140,15 @@
         </p>
     </div>
     <br>
-    <div align=center><a href="./imagenes/infancia/familia/hermanos1.jpg" target="_blank"><img src="./imagenes/infancia/familia/hermanos1_opt.jpg" alt="Los tres hermanos"></a></div>
     
     <a href="cosas.html"><center>Ir a cosas sobre m&#237;.</center></a>
     </div>
     <div id="pie">
         <p class="pieDePagina">
-            Wendy Vega<br>
-            Contacto:<br>
-            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram"></a><br>
-            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a>
-            <p id="copyright">&#169;2017. Wendy Vega&#153;</p>
+            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook" class="agrandaImagen"></a>
+            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram" class="agrandaImagen"></a><br>
+            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a></p>
+        <p id="copyright">&#169;2017. Wendy Vega</p>
     </div>
     </div>
     </body>
