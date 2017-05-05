@@ -8,6 +8,15 @@
     <link href="./imagenes/logos/luna.jpg" rel="shortcut icon" type="image/png">
     </head>
     <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba" class="agrandaImagen"/></a>
+    <script type="text/javascript">
+        window.onload = function(){
+        // Para internet Explorer
+        document.onselectstart = function(){return false;} 
+        // Para Firefox
+        document.onmousedown = function(){return false;}
+        }
+            
+    </script>
 <body>
     <div id="contenedor">
         <div id="cabecera">

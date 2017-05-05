@@ -8,8 +8,15 @@
     <link href="./imagenes/logos/luna.jpg" rel="shortcut icon" type="image/png">
     
     </head>
-    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba" class="agrandaImagen"/></a>
-
+    <script type="text/javascript">
+        window.onload = function(){
+        // Para internet Explorer
+        document.onselectstart = function(){return false;} 
+        // Para Firefox
+        document.onmousedown = function(){return false;}
+        }
+            
+    </script>
 <body>
     <div id="contenedor">
         <div id="cabecera">
@@ -32,6 +39,7 @@
         </div>
     
     <div id="contenido">
+        <p id="fecha">  </p>
     <h1 class="titulo"><center>Mi autobiograf&#237;a <br>by <i>Wendy Vega</i></center></h1><br>
     
         <div align=center><a href="imagenes/actualidad/pagina/wendyPrincipal.jpg" target="_blank">
@@ -47,7 +55,7 @@
         
         Mis pasatiempos favoritos son leer, escuchar m&#250;sica, tomar fotos, observar a las personas y pensar.
             
-        Me gustan los retos mentales, es decir, utilizar la l&#243;gica. También me gusta mucho el mar, la luna, los atardeceres y el cielo en general.
+        Me gustan los retos mentales, es decir, utilizar la l&#243;gica. Tambi&#233;n me gusta mucho el mar, la luna, los atardeceres y el cielo en general.
         </p>
             <br>
             <a href="javascript:history.go(-1)"><img src="./imagenes/logos/atras_opt.png" alt="Atr&#225;s"></a> 
