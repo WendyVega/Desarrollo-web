@@ -15,6 +15,16 @@
         document.onselectstart = function(){return false;} 
         // Para Firefox
         document.onmousedown = function(){return false;}
+        //fecha
+        var date = new Date();
+        var d  = date.getDate();
+        var day = (d < 10) ? '0' + d : d;
+        var m = date.getMonth() + 1;
+        var month = (m < 10) ? '0' + m : m;
+        var yy = date.getYear();   
+        var year = (yy < 1000) ? yy + 1900 : yy;
+        var fecha = document.getElementById("fecha");
+        fecha.innerHTML="Hoy es: " + day + "/" + month + "/" + year;
         }
             
     </script>
@@ -47,7 +57,8 @@
             <li><a href="./infancia.html#primaria" target="_parent">Primaria</a></li>
             </ul>
         </div>
-        <div id="contenido" class="normal"> 
+        <div id="contenido" class="normal">
+            <p id="fecha"></p>
         <h1 class="titulo">Infancia</h1><br>
         <div class="imagenConPie"><div class="pieFoto" title="1996. Registrando a Wendy"><a href="./imagenes/infancia/pagina/wendyMiradaBebe.jpg" target="_blank">
             <center><img  src="./imagenes/infancia/pagina/wendyMiradaBebe_opt.jpg" alt="Beb&#233;" title="Wendy beb&#233;">
