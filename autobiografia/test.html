@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Test</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="./estilos.css">
+    <link href="./imagenes/logos/luna.jpg" rel="shortcut icon" type="image/png">
+    <script type="text/javascript">
+        window.onload = function(){
+        // Para internet Explorer
+        document.onselectstart = function(){return false;} 
+        // Para Firefox
+        document.onmousedown = function(){return false;}
+        //fecha
+        var date = new Date();
+        var d  = date.getDate();
+        var day = (d < 10) ? '0' + d : d;
+        var m = date.getMonth() + 1;
+        var month = (m < 10) ? '0' + m : m;
+        var yy = date.getYear();   
+        var year = (yy < 1000) ? yy + 1900 : yy;
+        var fecha = document.getElementById("fecha");
+        fecha.innerHTML="Hoy es: " + day + "/" + month + "/" + year;
+        }
+        function verificar(){
+            var valor=0;
+            if(document.getElementById("4").checked) valor++;
+            if(document.getElementById("gall").checked) valor++;
+            if(document.getElementById("cinco").checked)valor++;
+            if(document.getElementById("ben").checked)valor++;
+            if(document.getElementById("ra").checked)valor++;
+            if(document.getElementById("mich").checked)valor++;
+            if(document.getElementById("abe").checked)valor++;
+            if(document.getElementById("ana").checked)valor++;
+            if(document.getElementById("psico").checked)valor++;
+            if(document.getElementById("aje").checked)valor++;
+            
+            var resultado=document.getElementById("resultado");
+            if(valor<7){
+                resultado.innerHTML="<center>No pusiste atenci&#243;n<br><img src=./imagenes/logos/reprobado.gif><br>Aciertos: "+valor+"</center>";
+            }else
+            if(valor>6 && valor<10){
+                resultado.innerHTML="<center>Aprobaste<br><img src=./imagenes/logos/obama.gif><br>Aciertos: "+valor+"</center>";
+            }else {
+                resultado.innerHTML="<center>EXCELENTE!<br><img src=./imagenes/logos/aprobado.gif><br>Aciertos: "+valor+"</center>";
+            }
+            
+        } 
+    </script>
+</head>
+    <a href="#"><img src="./imagenes/logos/arriba_opt.png" title="Ir arriba" id="botonArriba" class="agrandaImagen"/></a>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+ 
+            <div align=center><a href="./Principal.html" target="_parent"><img src="./imagenes/logos/nombreLuna.png"></a></div>
+    <header>
+	<nav>
+		<ul>
+            <li><a href="./Principal.html">&#191;Qui&#233;n soy&#63;</a></li>
+			<li><a href="./infancia.html">Infancia</a></li>
+			<li><a href="./adolescencia.html">Adolescencia</a></li>
+			<li><a href="./actualidad.html">Actualidad</a></li>
+			<li><a href="./familia.html">Familia</a></li>
+			<li><a href="./cosas.html">Cosas sobre m&#237;</a></li>
+            <li><a href="./academica.html">Informaci&#243;n acad&#233;mica</a></li>
+            <li><a href="./galeria.html">Galer&#237;a</a></li>
+		</ul>
+	</nav>
+</header>
+        </div>
+    
+    <div id="contenido" class="normal test">
+        <p id="fecha">  </p>
+        <br>
+    <h1 class="titulo"><center>Test... &#191;Qu&#233; tanto me conoces?</center></h1><br>
+    
+        <div align=center><a href="imagenes/actualidad/pagina/wendyPrincipal.jpg" target="_blank">
+           <img src="./imagenes/actualidad/pagina/wendyPrincipal_opt.jpg" alt="Wendy recientemente" class="imagen iluminarImagen" title="Wendy Vega">
+            </a></div>
+        
+        <br><br>
+        <div>
+                <ol>
+                    <li>&#191;Cu&#225;ndo es mi cumplea&#241;os?<br>
+                        <input type="radio" id="5" name="r1" value="5" checked>5 de Enero<br>
+                        <input type="radio" id="4" name="r1" value="4" >4 de Enero<br>
+                        <input type="radio" id="3" name="r1" value="3" >3 de Enero<br>
+                    </li><br>
+                    <li>&#191;Qu&#233; animal no me gusta?<br>
+                        <input type="radio" id="cuca" name="r2" value="cucaracha" checked>Cucaracha<br>
+                        <input type="radio" id="tara" name="r2" value="tarantula">Tar&#225;ntula<br>
+                        <input type="radio" id="gall" name="r2" value="gallina" >Gallina<br>
+                    </li><br>
+                    <li>&#191;En cu&#225;ntas casa he vivido?<br>
+                        <input type="radio" id="cinco" name="r3" value="cinco" checked>5<br>
+                        <input type="radio" id="cuatro" name="r3" value="cuatro">4<br>
+                        <input type="radio" id="tres" name="r3" value="tres">3<br>
+                    </li><br>
+                    <li>&#191;C&#243;mo se llamaba mi cuyo?<br>
+                        <input type="radio" id="pin" name="r4" value="pinky" checked>Pinky<br>
+                        <input type="radio" id="none" name="r4" value="ninguno">No tuvo nombre<br>
+                        <input type="radio" id="ben" name="r4" value="benito">Benito<br>
+                    </li><br>
+                    <li>&#191;C&#243;mo se llamaba mi padre?<br>
+                        <input type="radio" id="alb" name="r5" value="alberto" checked>Alberto<br>
+                        <input type="radio" id="ra" name="r5" value="raul">Ra&#250;l<br>
+                        <input type="radio" id="fco" name="r5" value="francisco">Francisco<br>
+                    </li><br>
+                    <li>&#191;A d&#243;nde viajo en Enero?<br>
+                        <input type="radio" id="gua" name="r6" value="guadalajara" checked>Guadalajara<br>
+                        <input type="radio" id="mich" name="r6" value="michoacan">Michoac&#225;n<br>
+                        <input type="radio" id="cdmx" name="r6" value="cdmx">CDMX<br>
+                    </li><br>
+                    <li>&#191;A qu&#233; soy al&#233;rgica?<br>
+                        <input type="radio" id="abe" name="r7" value="abejas" checked>Abejas<br>
+                        <input type="radio" id="cat" name="r7" value="gatos">Gatos<br>
+                        <input type="radio" id="nuez" name="r7" value="nueces">Nueces<br>
+                    </li><br>
+                    <li>&#191;C&#243;mo se llama mi mejor amiga?<br>
+                        <input type="radio" id="lau" name="r8" value="laura" checked>Laura<br>
+                        <input type="radio" id="diana" name="r8" value="diana">Diana<br>
+                        <input type="radio" id="ana" name="r8" value="ana">Ana<br>
+                    </li><br>
+                    <li>&#191;Cu&#225;l es uno de mis libros favoritos?<br>
+                        <input type="radio" id="psico" name="r9" value="psicoanalista" checked>Psicoanalista<br>
+                        <input type="radio" id="star" name="r9" value="estrellas">Bajo la misma estrella<br>
+                        <input type="radio" id="alqui" name="r9" value="alquimista">El alquimista<br>
+                    </li><br>
+                    <li>&#191;Con qu&#233; club liber&#233; el servicio social en preparatoria?<br>
+                        <input type="radio" id="teatro" name="r10" value="teatro" checked>Teatro<br>
+                        <input type="radio" id="lect" name="r10" value="lectura">Lectura<br>
+                        <input type="radio" id="aje" name="r10" value="ajedrez">Ajedrez<br>
+                    </li><br>
+            </ol>
+            <button type="button" onclick="verificar()"; style="width:70px; height:25px">Aceptar</button><br>
+            <br>
+            <div id="resultado"></div>
+            <br>
+            <a href="javascript:history.go(-1)"><img src="./imagenes/logos/atras_opt.png" alt="Atr&#225;s"></a> 
+            <a href="javascript:history.go(1)"><img src="./imagenes/logos/siguiente_opt.png" alt="Siguiente" align="right"></a> 
+        </div>
+        </div>
+
+    <div id="pie">
+        <p class="pieDePagina">
+            <a href="https://www.facebook.com/wendy.vegaruelas" target="_blank"><img src="./imagenes/logos/logoFb.png" alt="Facebook" class="agrandaImagen"></a>
+            <a href="https://www.instagram.com/wendyvvega/" target="_blank"><img src="./imagenes/logos/logoInsta.png" alt="Instagram" class="agrandaImagen"></a><br>
+            <a href="mailto: wendyv.vega@gmail.com"><font color="black">wendyv.vega&#64;gmail.com</font></a></p>
+        <p id="copyright">&#169;2017. Wendy Vega</p>
+    </div>
+    </div>
+    </body>
+</html>
